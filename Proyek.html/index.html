@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sistem Informasi Penyewaan Tenda</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <h1 class="judul-header">Ainar Tenda</h1>
+    <p class="subjudul-header">Sistem Informasi Penyewaan Tenda</p>
+  </header>
+
+  <nav>
+    <a href="#beranda">Beranda</a>
+    <a href="#tentang">Tentang Kami</a>
+    <a href="#daftar">Daftar Tenda</a>
+    <a href="#keuntungan">Keuntungan Memilih Kami</a>
+    <a href="#form">Form Pembelian</a> <!-- 🔹 Navigasi baru -->
+    <a href="#kontak">Kontak</a>
+  </nav>
+
+  <section id="beranda">
+    <h2>Selamat Datang</h2>
+    <p class="intro">
+      Sistem ini memudahkan Anda dalam menyewa tenda dengan cepat, praktis, dan terpercaya.
+      Temukan berbagai pilihan tenda berkualitas serta manfaat eksklusif yang hanya bisa Anda dapatkan di Ainar Tenda.
+    </p>
+  </section>
+
+  <section id="tentang">
+    <h2>Tentang Kami</h2>
+    <p class="tentang-text">
+      Kami hadir untuk membuat setiap acara Anda terasa lebih istimewa ✨ Dengan pengalaman dalam berbagai event — pernikahan, pameran, festival, hingga kegiatan outdoor — kami menyediakan tenda dengan desain menawan, kokoh, dan nyaman digunakan. Pelayanan kami selalu mengutamakan kualitas, kebersihan, dan keamanan, agar Anda bisa menikmati acara tanpa khawatir.
+    </p>
+  </section>
+
+  <section id="daftar">
+    <h2>Daftar Tenda Tersedia</h2>
+    <div class="tenda-container">
+      <div class="tenda-card">
+        <img src="Tenda lipat 3 x 3.jpg" alt="Tenda Lipat 3x3">
+        <h3>Tenda Lipat 3x3</h3>
+        <p>Kapasitas: 10 Orang</p>
+        <p>Harga: Rp 150.000</p>
+        <span class="status tersedia">Tersedia</span>
+      </div>
+
+      <div class="tenda-card">
+        <img src="tenda dome.jpg" alt="Tenda Dome">
+        <h3>Tenda Dome</h3>
+        <p>Kapasitas: 4 Orang</p>
+        <p>Harga: Rp 150.000</p>
+        <span class="status tersedia">Tersedia</span>
+      </div>
+
+      <div class="tenda-card">
+        <img src="tenda pleton 4x6 M.jpg" alt="Tenda Besar">
+        <h3>Tenda Pleton 4X6 M</h3>
+        <p>Kapasitas: 8-20 Orang</p>
+        <p>Harga: Rp 700.000 / Hari</p>
+        <span class="status disewa">Disewa</span>
+      </div>
+  <div class="tenda-card">
+        <img src="tenda kanopi.webp" alt="Tenda VIP">
+        <h3>Tenda Kanopi</h3>
+        <p>Kapasitas: 2-5 Orang</p>
+        <p>Harga: Rp 550.000</p>
+        <span class="status tersedia">Tersedia</span>
+      </div>
+
+      <div class="tenda-card">
+        <img src="Tenda-Sarnavil-5x5-m.webp" alt="Tenda Terpal">
+        <h3>Tenda Sarnafil 5x5</h3>
+        <p>Kapasitas: puluhan Orang</p>
+        <p>Harga: Rp 2.000.000 / unit</p>
+        <span class="status tersedia">Tersedia</span>
+      </div>
+
+      <div class="tenda-card">
+        <img src="tenda transparan.jpg" alt="Tenda Transparan">
+        <h3>Tenda Transparan</h3>
+        <p>Kapasitas: 100 Orang</p>
+        <p>Harga: Rp 123.500.000 / Hari</p>
+        <span class="status disewa">Disewa</span>
+      </div>
+  </div>
+  </section>
+
+ <section class="keuntungan">
+  <h2>Keuntungan Memilih Kami</h2>
+  <div class="grid-keuntungan">
+    <div class="card">✨ Tenda berkualitas tinggi dan terawat.</div>
+    <div class="card">💰 Harga sewa terjangkau dengan banyak pilihan.</div>
+    <div class="card">⚡ Proses pemesanan cepat dan mudah.</div>
+    <div class="card">👷‍♂️ Tim profesional siap membantu pemasangan dan pembongkaran.</div>
+    <div class="card">📱 Layanan pelanggan responsif melalui WhatsApp dan telepon.</div>
+  </div>
+</section>
+
+
+  <!-- 🔹 Bagian Form Pembelian -->
+  <section id="form">
+    <h2>Form Pembelian / Penyewaan Tenda</h2>
+    <p class="intro">Isi data di bawah ini untuk melakukan pemesanan tenda pilihan Anda:</p>
+
+    <form action="#" method="post" class="form-pembelian">
+      <label for="nama">Nama Lengkap:</label>
+      <input type="text" id="nama" name="nama" required />
+
+      <label for="telepon">Nomor Telepon:</label>
+      <input type="tel" id="telepon" name="telepon" required />
+
+      <label for="tenda">Pilih Jenis Tenda:</label>
+      <select id="tenda" name="tenda" required>
+        <option value="">-- Pilih Tenda --</option>
+        <option value="lipat3x3">Tenda Lipat 3x3</option>
+        <option value="dome">Tenda Dome</option>
+        <option value="pleton4x6">Tenda Pleton 4x6 M</option>
+        <option value="kanopi">Tenda Kanopi</option>
+        <option value="sarnafil5x5">Tenda Sarnafil 5x5</option>
+        <option value="transparan">Tenda Transparan</option>
+      </select>
+
+      <label for="tanggal">Tanggal Pemakaian:</label>
+      <input type="date" id="tanggal" name="tanggal" required />
+
+      <label for="durasi">Durasi Sewa (hari):</label>
+      <input type="number" id="durasi" name="durasi" min="1" required />
+
+      <label for="alamat">Alamat Lengkap:</label>
+      <textarea id="alamat" name="alamat" rows="3" required></textarea>
+
+      <button type="submit">Kirim Pemesanan</button>
+    </form>
+  </section>
+
+  <section id="kontak">
+    <h2>Kontak Kami</h2>
+    <p class="intro">
+      Jika Anda tertarik dan ingin mendapatkan informasi lebih lanjut,
+      jangan ragu untuk menghubungi kami melalui:
+    </p>
+    <ul class="kontak-list">
+      <li>💬 WhatsApp: <strong>0878-6500-9182</strong></li>
+      <li>📸 Instagram: <strong>@ainarsewatenda_official</strong></li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 - Sistem Informasi Penyewaan Tenda</p>
+  </footer>
+
+</body>
+</html>

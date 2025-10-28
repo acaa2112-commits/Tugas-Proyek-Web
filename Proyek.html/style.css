@@ -1,0 +1,234 @@
+/* === Warna dasar halaman === */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #92c1d8; /* 🌸 Pink lembut */
+  color: #222;
+  line-height: 1.6;
+}
+
+/* === Header === */
+header {
+  background: linear-gradient(135deg, #d28ee6, #2026d6);
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+/* === Navigasi === */
+nav {
+  background-color: #5889dd;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  padding: 15px 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 8px 16px;
+  border-radius: 20px;
+  transition: background 0.3s;
+}
+
+nav a:hover {
+  background-color: #a9b9d6;
+}
+
+/* === Semua Section === */
+section {
+  background-color: #ffffff; /* 📦 Kotak isi putih */
+  padding: 50px 25px;
+  max-width: 1100px;
+  margin: 40px auto;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* === Judul Section === */
+h2 {
+  text-align: center;
+  color: #4c56a5;
+  margin-bottom: 25px;
+  font-size: 26px;
+}
+
+/* === Teks Intro === */
+.intro {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* === Kartu Tenda === */
+.tenda-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  justify-items: center;
+}
+
+.tenda-card {
+  background: rgb(195, 224, 250);
+  border-radius: 12px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.tenda-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.tenda-card img {
+ width: 100%;
+  height: 280px; /* tambahin tinggi fix biar seragam */
+  object-fit: cover; /* potong bagian luar tapi jaga proporsi */
+  border-radius: 10px;
+  background-color: #fff; /* biar kelihatan rapi kalau gambarnya kecil */
+  margin-bottom: 10px;
+}
+
+/* Status tersedia / disewa */
+.status {
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 15px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.status.tersedia {
+  background-color: #c8e6c9;
+  color: #256029;
+}
+
+.status.disewa {
+  background-color: #ffcdd2;
+  color: #c62828;
+}
+
+/* === Keuntungan === */
+.keuntungan {
+  text-align: center;
+  margin: 60px auto;
+  max-width: 1100px;
+}
+
+.keuntungan h2 {
+  color: #4a55a2;
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.grid-keuntungan {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  justify-items: center;
+}
+
+.card {
+  background: rgba(139, 169, 200, 0.95); /* warna biru lembut seperti Sarnafil */
+  color: #111;
+  font-weight: 600;
+  border-radius: 16px;
+  padding: 25px 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 320px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+}
+
+/* biar baris kedua 2 kotak di tengah */
+.card:nth-last-child(-n+2) {
+  grid-column: span 1;
+  justify-self: center;
+}
+
+
+/* === Form Pembelian === */
+.form-pembelian {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-pembelian label {
+  font-weight: 600;
+  color: #000000;
+}
+
+.form-pembelian input,
+.form-pembelian select,
+.form-pembelian textarea {
+  padding: 10px 12px;
+  border: 1.5px solid #b0bec5;
+  border-radius: 8px;
+  font-size: 15px;
+  transition: border 0.3s;
+}
+
+.form-pembelian input:focus,
+.form-pembelian select:focus,
+.form-pembelian textarea:focus {
+  border-color: #f06292;
+  outline: none;
+}
+
+.form-pembelian button {
+  background-color: #60c2cd;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.form-pembelian button:hover {
+  background-color: #e8d2eb;
+}
+
+/* === Kontak === */
+.kontak-list {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+.kontak-list li {
+  margin: 8px 0;
+  font-size: 17px;
+}
+
+/* === Footer === */
+footer {
+  background-color: #3d80ba;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 14px;
+}
